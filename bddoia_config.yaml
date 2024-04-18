@@ -1,0 +1,41 @@
+data:
+  bddoia_data:  "./bddoia/data"
+  train_action: "./bddoia/train_25k_images_actions.json"
+  train_reason: "./bddoia/train_25k_images_reasons.json"
+  val_action: "./bddoia/val_25k_images_actions.json"
+  val_reason: "./bddoia/val_25k_images_reasons.json"
+  test_action: "./bddoia/test_25k_images_actions.json"
+  test_reason: "./bddoia/test_25k_images_reasons.json"
+
+action_class: 4
+reason_class: 21
+
+device: "cuda:0"
+
+optimizer:
+  batch_size: 2
+  learning_rate: 0.001
+  momentum: 0.9
+  weight_decay: 0.0001
+  num_epoches: 50
+
+out_inplanes: 2048
+
+word_embedding_path: "./label_embedding.pkl"
+
+attention_dim: 8
+
+adj_file_path: "./adj.pkl"
+GNN:
+  # preprocess adjacent matrix
+  action_threshold: 0.45
+  reason_threshold: 0.07
+  ratio: 0.5
+  min_ratio: 0.1
+
+  # network
+  hidden_dim: 8
+  output_dim: 16
+  heads_mum: 8
+
+classifier_hidden_dim: 64

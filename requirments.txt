@@ -1,0 +1,7 @@
+fightingcv-attention
+transformers
+torch_geometric
+matplotlib
+scikit-learn
+sentence-transformers
+visualize
