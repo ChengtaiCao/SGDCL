@@ -34,7 +34,7 @@ conda create -n SGDCL python=3.9
 conda activate SGDCL
 
 # install Pytorch
-install torch torchvision torchaudio
+pip install torch torchvision torchaudio
 
 # install other required packages
 pip install -r requirements.txt
