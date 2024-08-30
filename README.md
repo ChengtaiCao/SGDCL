@@ -93,6 +93,7 @@ If you find our paper or code are useful for your research, please consider citi
   author = {Chengtai Cao and Xinhong Chen and Jianping Wang and Qun Song and Rui Tan and Yung-Hui Li}, 
   title = {SGDCL: Semantic-Guided Dynamic Correlation Learning for Explainable Autonomous Driving}, 
   booktitle={International Joint Conference on Artificial Intelligence},
+  pages={596--604},
   year = {2024}
 }
 ```
